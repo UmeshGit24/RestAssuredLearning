@@ -16,7 +16,6 @@ import org.testng.annotations.BeforeClass;
 
 public class BaseSetUp {
 
-
     @BeforeClass
     public void setUp(){
         RequestSpecification requestSpecification=new RequestSpecBuilder()
