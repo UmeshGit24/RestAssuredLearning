@@ -66,6 +66,7 @@ public class RestFullBookingTestCases extends BaseSetUp{
                 .body("booking.additionalneeds",equalTo(newBooking.getAdditionalneeds()))
                 .extract()
                 .path("bookingid");
+        System.out.println(System.getProperty("user.dir"));
 
     }
     @Test(description = VERIFY_BOOKING_DETAILS_BASED_ON_BOOKING_ID,priority = 2,dependsOnMethods = {"createBooking"})
